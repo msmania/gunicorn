@@ -65,3 +65,9 @@ class FakeSocket(object):
 
     def seek(self, offset, whence=0):
         self.tmp.seek(offset, whence)
+
+    def close(self):
+        pass
+
+    def sendall(self, chunk):
+        pass
